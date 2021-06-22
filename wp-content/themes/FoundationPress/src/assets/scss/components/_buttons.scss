@@ -1,0 +1,68 @@
+// Mixin for the buttons
+@mixin button {
+  font-family: $secondaryFont;
+  font-size: 13px;
+  font-weight: bold;
+  color: $white;
+  background: $dark-red;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: background-color .5s ease-out;
+  
+  &:hover {
+    background: $light-red;
+  }
+}
+
+
+// Buttons for large screens
+// Read More button
+.readMore-button {
+  @include button();
+  padding: 1rem;
+}
+
+// Load More button
+.loadMore-button {
+  @include button();
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+}
+
+// Newsletter button
+.mailpoet_submit {
+  cursor: pointer;
+  // Other configurations are on the plugin's settings and on the "_footer.scss" file
+}
+
+
+// Buttons for medium screens
+// Read More button
+@mixin readMore-button-md {
+  padding: 1rem;
+  // margin-top: 0.5rem;
+}
+
+// Load More button
+@mixin loadMore-button-md {
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+// Buttons for small screens
+// Load More button
+@mixin loadMore-button-sm {
+  font-size: .9rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+// Read More button
+@mixin readMore-button-sm {
+  font-size: .9rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,305 @@
+// Mixin for Flexbox Columns
+@mixin flexColumn ($justify, $align) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-content: $align;
+}
+
+
+// Mixin for Flexbox Rows
+@mixin flexRow ($justify, $align) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify;
+  align-content: $align;
+}
+
+
+// Styling the page title
+.topic-title {
+  width: 70%;
+  margin: auto;
+  padding: 3rem 0 1rem;
+
+  h1 {
+    font-size: 25px;
+    color: $black;
+    font-family: $primaryFont;
+    font-weight: bold;
+  }
+}
+
+
+// Style the container 
+.topic-container {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 5rem;
+  padding: 3rem 6rem;
+  background: $light-gray;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  .card-date  {
+    font-family: $secondaryFont;
+    font-size: 13px;
+    color: $medium-gray;
+    margin-bottom: 1rem;
+  }
+}
+
+
+// Style the subtopic title
+.subtopic {
+  padding: 0 0 0.5rem;
+  margin: auto;
+  
+  h2 {
+    font-family: $primaryFont;
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+// Style the container for each card
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  margin-bottom: 5rem;
+
+  // The cards images
+  .card-image img {
+    max-height: 30vh;
+    min-width: 25vw;
+  }
+}
+
+// Style card's title, date, text and author
+.card-wrap {
+  .card-title > h3 {
+    font-size: 20px;
+    font-family: $primaryFont;
+    font-weight: bold;
+  }
+  
+  .card-date  {
+    font-family: $secondaryFont;
+    font-size: 13px;
+    color: $medium-gray;
+  }
+  
+  .card-text {
+    font-family: $primaryFont;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-contact-author {
+    font-size: 20px;
+    font-family: $primaryFont;
+    font-weight: bold;
+  }
+}
+
+
+// Styling the Top Story section
+.topstory-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 35vh;
+  margin-bottom: 4rem;
+
+  h3 {
+    font-family: $primaryFont;
+    font-size: 20px;
+    color: $white;
+    font-weight: bold;
+    padding-left: 2rem;
+  }
+
+  p {
+    font-size: 13px;
+    font-family: $secondaryFont;
+    color: $white;
+    padding: 0 0 1rem 2rem;
+  }
+
+  a, a:visited {
+    color: $white;
+  }
+}
+
+
+// Background images for each Top Story Section
+.topstory-business {
+  background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/market-crash.jpg),
+  linear-gradient(rgba(255, 255, 255, 0.349),rgba(0, 0, 0, 0.945));  
+  background-size: cover;
+  background-position: center;
+}
+
+.topstory-events {
+  background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/music-festival.jpg),
+                    linear-gradient(rgba(255, 255, 255, 0.349),rgba(0, 0, 0, 0.945));  
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+.topstory-restaurants {
+  background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/restaurant.jpg),
+                    linear-gradient(rgba(255, 255, 255, 0.349),rgba(0, 0, 0, 0.945)); 
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+.topstory-entertainment {
+  background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/nba-lebron.jpg),
+                    linear-gradient(rgba(255, 255, 255, 0.349),rgba(0, 0, 0, 0.945));  
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+// 
+
+
+// Styling the line between TopStory and Latest sections
+hr {
+  border: 1px solid $medium-gray;
+  width: 90%;
+  margin: 3rem auto;
+}
+
+
+// The Load More button
+.button-container {
+  @include flexColumn(center, center);
+  
+  .button-wrap {
+    @include flexRow(center, center);
+    border-top: 2px solid $medium-gray;
+    margin: auto;
+    min-width: 90%;
+  }
+}
+
+
+// Responsive for medium screens
+@media (max-width: 1000px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+  }
+
+  .topstory {
+    margin: 0 5rem 5rem;
+  } 
+ 
+  // Site buttons
+  .loadMore-button {
+    @include loadMore-button-md;
+  }
+
+  .readMore-button {
+    @include readMore-button-md;
+  }
+
+  // Give LESS PADDING to left n right
+  .topic-container{
+    padding: 3rem 3rem;
+  }
+  
+}
+
+
+// Responsive for small screens
+@media (max-width: 500px) {
+  // Page title
+  .topic-title {
+    width: 80%;
+    padding: 2rem 0 0.5rem;
+    
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+  
+  // Top Story section
+  .topstory-heading {
+    height: 11rem;
+    margin-bottom: 1rem;
+    
+    h3 {
+      font-size: 1.2rem;
+      padding-left: 1rem;
+      margin-bottom: 0;
+    }
+    
+    p {
+      font-size: 1rem;
+      padding: 0 0 0rem 1rem;
+    }
+  }
+  
+  // Line between TopStory and Latest sections
+  hr {
+    border-width: 0px;
+    margin: 2rem;
+  }
+
+  // Cards
+  .topic-container {
+    width: 90%;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    
+    .card-container {
+      margin-bottom: 2.5rem;
+      
+      .card-wrap {
+        padding: 0 1rem;
+
+        .card-title > h3 {
+          font-size: 1.3rem;
+          padding-top: .5rem;
+          margin-bottom: 0;
+        }
+        
+        .card-date  {
+          font-size: .85rem;
+        }
+        
+        .card-text {
+          font-size: 1rem;
+          margin-bottom: 0;
+          padding-bottom: 0rem;
+        }
+      }
+    }
+  
+    .subtopic h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  // The div for the "Load More" button
+  .loadMore-button {
+    margin-top: 2rem;
+  }
+  
+  // Site buttons
+  .loadMore-button {
+    @include loadMore-button-sm;
+  }
+
+  .readMore-button {
+    @include readMore-button-sm;
+  }
+}
+
+

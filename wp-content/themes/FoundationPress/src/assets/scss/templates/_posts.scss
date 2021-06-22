@@ -1,0 +1,102 @@
+// Style the main container
+.main-container {
+  height: auto;
+  width: 70%;
+  margin: 3rem auto 5rem;
+  padding: 1rem 0;
+  background: $light-gray; 
+}
+
+.main-grid {
+  margin-top: 1rem;
+}
+
+// The post content
+.main-grid .main-content {
+  width: calc(90%);
+  margin: 0 4rem;
+
+  // The post title
+  h1 {
+    font-family: $primaryFont;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  // Time/Date posted and author's name
+  time, .author{
+    font-size: 14px;
+  }
+}
+
+
+// Style the image and paragraph
+.entry-content {
+  p {
+    font-size: 15px;
+    text-align: justify;
+  }
+  // The post image
+  .wp-block-image {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    img {
+      width: 400px;
+      height: auto;
+    }
+  }
+}
+
+
+// Style the Related Post plugin
+.yarpp {
+  margin: 3rem 0 4rem !important;
+
+  // The title
+  h3 {
+    font-family: $primaryFont;
+    font-size: 22px !important;
+  }
+
+  // The square
+  .yarpp-thumbnails-horizontal .yarpp-thumbnail {
+    border: none;
+    margin-right: 1rem; 
+    width: auto;
+  }
+
+  // The related posts images
+  .yarpp-thumbnail > img, .yarpp-thumbnail-default {
+    width: auto;
+    height: 150px;
+  }
+}
+ 
+// The content text
+.yarpp-related .yarpp-thumbnail-title {
+  font-size: 13px !important;
+  color: $black;
+  width: auto !important;
+  max-width: 200px;
+}
+
+
+// Responsive for small screens
+@media (max-width: 500px) {
+  // Style the main container
+  .main-container {
+    width: 90%;
+    margin: 2rem auto 5rem;
+    padding: 1rem 0;
+  }
+
+  .main-grid .main-content {
+    margin: 0 2rem;
+  }
+
+  .yarpp {
+    margin-bottom: 0 !important;
+  }
+}

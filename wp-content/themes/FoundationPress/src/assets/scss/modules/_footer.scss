@@ -1,0 +1,234 @@
+// Mixin for UL lists
+@mixin ulList {
+  ul {
+    margin: 0;
+    list-style: none;
+  }
+}
+
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+// Footer tag
+footer  {
+  width: auto;
+  background: $light-gray;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+
+  width: 80%;
+  margin: auto;
+  column-gap: 1.5rem;
+  padding: 2rem 0rem 1rem;
+}
+
+
+// Footer sections style 
+.sec {
+  font-family: $primaryFont;
+
+  h3 {
+    font-family: $primaryFont;
+    font-size: 20px;
+    font-weight: bold;
+
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+// About section
+.about {
+  p {
+    color: $dark-gray;
+    margin-top: 1rem;
+    min-width: 100px;
+    width: 80%;
+  }
+
+  img {
+    max-width: 80%;
+  }
+}
+
+// QuickLinks section
+.quicklinks {
+  @include ulList();
+  padding-left: 2rem;
+
+  li a {
+    display: inline-block;
+    color: $dark-gray;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+}
+
+// Follow Us section
+.followUs {
+  @include ulList();
+
+  .sci {
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    column-gap: 18px;
+    
+    li a {
+      display: inline-block;
+      display: grid;
+      font-size: 24px;
+      color: $dark-gray;
+    }
+  }
+}
+
+// Newsletter section
+.newsletter {
+  // Subscribe button text
+  input {
+    width: 180px;
+    text-align: center;
+  }
+
+  // Newsletter plugin form
+  .mailpoet_form {
+    margin: 20px 0 20px;
+  }
+  
+  // Email and subscribe button area
+  .mailpoet_paragraph {
+    width: 180px;
+    margin: auto;
+  }
+
+  // Sign-up title
+  .mailpoet-has-font{
+    font-family: $primaryFont !important;
+    font-size: 21px;
+  }
+
+  // To override the Subscribe BTN color
+  .mailpoet_submit {
+    background-color: #aa1b2e !important;
+  }
+
+  .mailpoet_submit:hover {
+    background-color: $light-red !important;
+    transition: .5s;
+  }
+}
+
+// Copyright section
+.copyrightText {
+  color: $dark-gray;
+  font-size: 12px; 
+  font-style: italic;
+  text-align: center;
+  padding: 0 1rem 1rem;
+  background: $light-gray;
+  
+  p {
+    margin-bottom: 0;
+  }
+}
+// 
+
+
+/* Responsive for medium screens */
+@media (max-width: 1000px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  // About section
+  .about {
+    p {
+      width: 60%;
+    }
+    
+    img {
+      width: 60%;
+    }
+  }
+
+  // Newsletter button
+  .newsletter-button {
+    padding: 1rem 2rem;
+  }
+}
+
+
+/* Responsive for small screens */
+@media (max-width: 750px) {
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 4rem 0;
+  }
+
+  .sec {
+    padding-bottom: 1rem;
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  // About section
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 14px;
+      width: 60%;
+    }
+    
+    img {
+      width: 60%;
+    }
+
+  }
+  
+  // Quicklinks section
+  .quicklinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+
+    ul {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  // Follow Us section
+  .followUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // Newsletter section
+  .newsletter {
+    display: flex;
+    justify-content: center;
+    
+    // Sign-up title
+    .mailpoet-has-font{
+      font-size: 19px;
+    }
+  }
+}
+

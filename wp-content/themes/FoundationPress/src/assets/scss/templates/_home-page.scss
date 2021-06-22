@@ -1,0 +1,283 @@
+// Import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+// h1 that says TRENDING
+.home-header-title {
+  font-family: $primaryFont;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1.5rem 0 0 1rem;
+  margin-bottom: -1.5rem;
+}
+
+// Container that has TOP STORIES and WEATHER
+.home-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+// Both TOP STORIES and WEATHER h2 has this
+.top-stories, .weather {
+  padding: 1rem;
+
+  h2 {
+    font-family: $primaryFont;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}
+
+// Make the STORY CONTAINER a grid
+.story-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+
+// EACH story card will have this styling 
+.story-1, .story-2, .story-3, .story-4 {
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  height: 25vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .story-name {
+    padding-left: 1rem;
+
+    color: $white;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .story-name:hover {
+    color: $light-red;
+    transition-duration: .5s;
+  }
+
+  .story-date {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+
+    color: $white;
+    font-size: 1rem;
+    font-family: $secondaryFont;
+  }
+}
+
+// EACH STORY will have a DIFFERENT background image
+.story-1 {
+  background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/stock-chart.jpg),
+    linear-gradient(rgba(255, 255, 255, 0.349),rgba(0, 0, 0, 0.945));
+}
+
+.story-2 {
+  background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/coke.jpg),
+    linear-gradient(rgba(255, 255, 255, 0.349),rgba(0, 0, 0, 0.945));
+  background-position: center;
+}
+
+.story-3 {
+  background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/office.jpg),
+    linear-gradient(rgba(255, 255, 255, 0.349),rgba(0, 0, 0, 0.945));
+}
+
+.story-4 {
+  background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/rocket.jpg),
+    linear-gradient(rgba(255, 255, 255, 0.349),rgba(0, 0, 0, 0.945));
+}
+
+// CATEGORY CARDS
+.category-grid-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 1rem;
+  
+  .category-grey-box {
+    background-color: $light-gray;
+    padding-top: 1rem;
+
+    .category-title {
+      padding: 1rem;
+      margin: 0;
+      font-family: $primaryFont;
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: $black;
+    }
+
+    .category-title:hover {
+      color: $light-red;
+      transition-duration: .5s;
+    }
+
+    .category-img-1, .category-img-2, .category-img-3, .category-img-4 {
+      background-size: cover;
+      background-blend-mode: overlay;
+      background-repeat: no-repeat;
+      height: 25vh;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .category-name {
+        padding-left: 1rem;
+    
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .category-name:hover {
+        color: $light-red;
+        transition-duration: .5s;
+      }
+    
+      .category-date {
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+    
+        color: $white;
+        font-size: 1rem;
+        font-family: $secondaryFont;
+      }
+    }
+
+    // EACH CATEGORY CARD will have a different background image
+    .category-img-1 {
+      background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/market-crash.jpg),
+        linear-gradient(rgba(255, 255, 255, 0.349),rgba(0, 0, 0, 0.945));  
+    }
+
+    .category-img-2 {
+      background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/music-festival.jpg),
+      linear-gradient(rgba(255, 255, 255, 0.349),rgba(0, 0, 0, 0.945));  
+    }
+
+    .category-img-3 {
+      background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/restaurant.jpg),
+      linear-gradient(rgba(255, 255, 255, 0.349),rgba(0, 0, 0, 0.945));  
+    }
+
+    .category-img-4 {
+      background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/nba-lebron.jpg),
+      linear-gradient(rgba(255, 255, 255, 0.349),rgba(0, 0, 0, 0.945));  
+    }
+
+    .category-summary {
+      padding: 1rem;
+      margin: 0;
+      font-family: $primaryFont;
+    }
+
+    .flex-author {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .category-author {
+      color: #8d8d8d;
+      padding: 0 1rem 1rem 1rem;
+    }
+
+    .category-author:hover {
+      color: $light-red;
+      transition-duration: .5s;
+    }
+  }
+}
+
+// Give margin to COVID SLIDER on SMALL SCREEN
+.n2-section-smartslider {
+  margin: 2rem 0;
+}
+
+// To select the LAST CATEGORY-GRID-CONTAINER 
+.category-grid-container:last-of-type {
+  margin-bottom: 3rem;
+}
+
+
+// SMART SLIDER HOVER ANIMATION
+#n2-ss-6item1:hover, #n2-ss-6item4:hover, #n2-ss-6item7:hover, #n2-ss-8item1:hover {
+  // To change color -> Smart Slider and change hover color
+  transition-duration: .5s;
+  }
+
+  #n2-ss-8item1 .n2-ow:hover {
+  transition-duration: .5s !important;
+}
+
+
+// LARGE SCREENS
+@media(min-width: 700px) {
+  .home-header-title {
+    font-size: 2rem;
+    padding: 1.5rem 0 0 10rem;
+  }
+
+  .home-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem 10rem 2rem 10rem;
+  }
+
+  .story-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .top-stories h2 {
+      font-size: 1.7rem;
+    }
+  
+  .weather h2 {
+    font-size: 1.7rem;
+  }
+
+  .category-grid-container {
+    padding: 1rem;
+  }
+
+  .category-large-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 10rem 2rem 10rem;
+  }
+
+  // Center all the background images in the CATEGORY
+  .category-img-1, .category-img-2, .category-img-3, .category-img-4 {
+    background-position: center;
+  }
+
+  // In the LARGE SCREEN, we are NOT giving margin-bot to the 'last type of' ANYMORE
+  .category-grid-container:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .category-title, .category-name, .category-date, .category-summary, .category-author {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+  
+  .n2-ow:hover {
+    transition: ease-in !important;
+    transition-duration: .5s !important;
+  }
+}

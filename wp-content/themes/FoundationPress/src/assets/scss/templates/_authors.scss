@@ -1,0 +1,130 @@
+// The container for the entire content
+.topic-author-container {
+  width: 70%;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 3rem 6rem;
+  background: $light-gray;
+}
+
+// The author title section
+.topic-author-title {
+  margin: auto;
+  
+  h1 {
+    font-family: $primaryFont;
+    font-size: 25px;
+    color: $black;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  p {
+    color: $dark-gray;
+  }
+}
+
+// General container for the author card
+.author-card-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2rem;
+  margin-bottom: 5rem;
+  max-width: 800px;
+  
+  // The authors images
+  .card-image {
+    .author-photo {
+      width: auto;
+      height: auto;
+    }
+  }
+  
+  // Style the Author's contact section
+  .card-contact-author {
+    ul {
+      margin: 0;
+      list-style: none;
+    }
+  
+    p {
+      margin-bottom: 1rem;
+    }
+    
+    // The Ul field
+    .sci {
+      display: grid;
+      grid-template-columns: repeat(4, 20px);
+      column-gap: 22px;
+  
+      // Style the social icons
+      li a {
+        display: inline-block;
+        display: grid;
+        font-size: 26px;
+        color: $dark-red;
+      }
+    }
+  }
+}
+
+// Responsive for the small screen
+@media(max-width: 700px) {
+
+  // The container for the entire content
+  .topic-author-container {
+    margin-bottom: 3rem;
+    padding: 1rem;
+  }
+  
+  // The container for the author section
+  .author-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+    // The authors images
+  .card-image {
+    display: flex;
+    justify-content: center;
+
+    // The author photo
+    .author-photo {
+      max-width: 60%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  // The container for the cards
+  .card-container {
+    margin-bottom: 2.5rem;
+    
+    .card-wrap {
+      padding: 0 1rem;
+
+      .card-title > h3 {
+        font-size: 1.3rem;
+        padding-top: .5rem;
+        margin-bottom: 0;
+      }
+      
+      .card-date  {
+        font-size: .85rem;
+      }
+      
+      .card-text {
+        font-size: 1rem;
+        margin-bottom: 0;
+        padding-bottom: 0rem;
+      }
+    }
+  }
+
+  // The text "Author Post"
+  .subtopic h2 {
+    font-size: 1.5rem;
+  }
+}
+
+

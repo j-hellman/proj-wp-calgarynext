@@ -1,0 +1,126 @@
+// Hero Section
+.hero {
+  height: 75vh;
+  width: 100%;
+  background-image: url(../../../../../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/covid-hero.jpg), 
+    linear-gradient(rgba(0, 0, 0, 0.65),rgba(255, 255, 255, 0.15));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  // Make a Hero Container a FlexBox
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  // The header in the Hero Section
+  .hero-title {
+    color: $white;
+    font-family: $primaryFont;
+    font-weight: bold;
+    font-size: 2.5rem;
+  
+    margin-bottom: 3rem;
+  }
+
+   // BUTTONS
+  .hero-btn {
+    background: $dark-red;
+    color: $white;
+    font-family: $secondaryFont;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 6px;
+  }
+  
+  .hero-btn:hover {
+    background: $light-red;
+    color: $white;
+    transition: background-color .5s ease-out;
+  }
+}
+
+
+
+// SECTION AFTER HERO
+.covid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70vh;
+  width: 80vw;
+  margin: auto;
+  
+  // Eligible / Authorized Headers
+  .covid-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .covid-text, .covid-vaccine-container  ul {
+    margin-bottom: 3rem;
+  }
+  
+  // BUTTONS
+  .covid-btn {
+    background: $dark-red;
+    color: $white;
+    font-family: $secondaryFont;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  
+  .covid-btn:hover {
+    background: $light-red;
+    color: $white;
+    transition: background-color .5s ease-out;
+  }
+}
+
+
+
+
+// LARGE SCREENS
+@media(min-width: 700px) {
+  .covid-container {
+    height: 60vh;
+    width: 80vw;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .covid-info-container, .covid-vaccine-container {
+    width: 50%;
+    max-height: 80vh;
+  }
+  
+  .covid-title, .covid-text, .covid-vaccine-container ul, .covid-btn  {
+    display: block;
+
+    width: 50%;    
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .covid-title {
+    font-size: 1.8rem;
+  }
+
+  .covid-text, .covid-vaccine-container ul {
+    margin-bottom: 2rem;
+  }
+}
