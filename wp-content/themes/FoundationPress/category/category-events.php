@@ -18,7 +18,7 @@ get_header(); ?>
     <h2>TOP STORY</h2>
   </div>
   <div class="topstory-heading topstory-events link-hover"> <!-- topstory-events set the background image -->
-    <h3><a href="http://localhost/calgary_next/events/music-festival-remain-closed/">Music Festival Remain Closed</a></h3>
+    <h3><a href="http://localhost/proj-wp-calgarynext/events/music-festival-remain-closed/">Music Festival Remain Closed</a></h3>
     <p>May 6, 2021</p>
   </div>
   <hr>
@@ -29,7 +29,7 @@ get_header(); ?>
   <!-- Card 1 -->
   <div class="card-container">
     <div class="card-image">
-      <img src="../../calgary_next\wp-content\themes\FoundationPress\src\assets\images\topic-events\calgary.jpg" alt="Calgary image">
+      <img src="../../proj-wp-calgarynext\wp-content\themes\FoundationPress\src\assets\images\topic-events\calgary.jpg" alt="Calgary image">
     </div>
     <div class="card-wrap">
       <div class="card-title">
@@ -42,7 +42,7 @@ get_header(); ?>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra justo euismod diam nunc, ut condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
       <div>
-        <button class="readMore-button" onclick="window.location.href='http:localhost/calgary_next/events/experience-the-best-of-calgary/'">READ MORE</button>
+        <button class="readMore-button" onclick="window.location.href='http:localhost/proj-wp-calgarynext/events/experience-the-best-of-calgary/'">READ MORE</button>
       </div>
     </div>
   </div>
@@ -50,7 +50,7 @@ get_header(); ?>
   <!-- Card 2 -->
   <div class="card-container">
     <div class="card-image">
-      <img src="../../calgary_next\wp-content\themes\FoundationPress\src\assets\images\topic-events\transparentPool.jpg" alt="Pool image">
+      <img src="../../proj-wp-calgarynext\wp-content\themes\FoundationPress\src\assets\images\topic-events\transparentPool.jpg" alt="Pool image">
     </div>
     <div class="card-wrap">
       <div class="card-title">
@@ -63,7 +63,7 @@ get_header(); ?>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra justo euismod diam nunc, ut condimentum commodo.</p>
       </div>
       <div>
-        <button class="readMore-button" onclick="window.location.href='http:localhost/calgary_next/events/transparent-pool-between-skyscrapers-opens-in-london/'">READ MORE</button>
+        <button class="readMore-button" onclick="window.location.href='http:localhost/proj-wp-calgarynext/events/transparent-pool-between-skyscrapers-opens-in-london/'">READ MORE</button>
       </div>
     </div>
   </div>
@@ -71,7 +71,7 @@ get_header(); ?>
   <!-- Card 3 -->
   <div class="card-container">
     <div class="card-image">
-      <img src="../../calgary_next\wp-content\themes\FoundationPress\src\assets\images\topic-events\borders.jpg" alt="Borders image">
+      <img src="../../proj-wp-calgarynext\wp-content\themes\FoundationPress\src\assets\images\topic-events\borders.jpg" alt="Borders image">
     </div>
     <div class="card-wrap">
       <div class="card-title">
@@ -84,7 +84,7 @@ get_header(); ?>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra justo euismod diam nunc, ut condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
       <div>
-        <button class="readMore-button" onclick="window.location.href='http:localhost/calgary_next/events/canada-prepares-to-reopen-the-borders/'">READ MORE</button>
+        <button class="readMore-button" onclick="window.location.href='http:localhost/proj-wp-calgarynext/events/canada-prepares-to-reopen-the-borders/'">READ MORE</button>
       </div>
     </div>
   </div>
@@ -92,7 +92,7 @@ get_header(); ?>
   <!-- Card 4 -->
   <div class="card-container">
     <div class="card-image">
-      <img src="../../calgary_next\wp-content\themes\FoundationPress\src\assets\images\topic-events\fathersDay.jpg" alt="Father's Day image">
+      <img src="../../proj-wp-calgarynext\wp-content\themes\FoundationPress\src\assets\images\topic-events\fathersDay.jpg" alt="Father's Day image">
     </div>
     <div class="card-wrap">
       <div class="card-title">
@@ -105,7 +105,7 @@ get_header(); ?>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra justo euismod diam nunc, ut condimentum commodo.</p>
       </div>
       <div>
-        <button class="readMore-button" onclick="window.location.href='http:localhost/calgary_next/events/fathers-day-curbside-gifts/'">READ MORE</button>
+        <button class="readMore-button" onclick="window.location.href='http:localhost/proj-wp-calgarynext/events/fathers-day-curbside-gifts/'">READ MORE</button>
       </div>
     </div>
   </div>
@@ -113,7 +113,7 @@ get_header(); ?>
   <!-- Card 5 -->
   <div class="card-container">
     <div class="card-image">
-      <img src="../../calgary_next\wp-content\themes\FoundationPress\src\assets\images\topic-events\happiness.jpg" alt="Workshop image">
+      <img src="../../proj-wp-calgarynext\wp-content\themes\FoundationPress\src\assets\images\topic-events\happiness.jpg" alt="Workshop image">
     </div>
     <div class="card-wrap">
       <div class="card-title">
@@ -126,7 +126,7 @@ get_header(); ?>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra justo euismod diam nunc, ut condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
       <div>
-        <button class="readMore-button" onclick="window.location.href='http:localhost/calgary_next/events/health-and-happiness-workshop/'">READ MORE</button>
+        <button class="readMore-button" onclick="window.location.href='http:localhost/proj-wp-calgarynext/events/health-and-happiness-workshop/'">READ MORE</button>
       </div>
     </div>
   </div>
