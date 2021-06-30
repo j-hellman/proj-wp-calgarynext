@@ -14,7 +14,7 @@
 
 			<!-- Logo & Description Section-->
 			<div class="sec about" >
-				<img src="../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/CN-LOGO.png" alt="Calgary Next Logo">
+				<img src="../../../../proj-wp-calgarynext/wp-content/themes/FoundationPress/src/assets/images/CN-LOGO.png" alt="Calgary Next Logo">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, eget sollicitudin posuere tortor, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			</div>
 			
@@ -22,13 +22,13 @@
 			<div class="sec quicklinks link-hover">
 				<h3>Links</h3>
 				<ul>
-					<li><a href="../../calgary_next">Home</a></li>
-					<li><a href="calgary_next/category-business">Business</a></li>
-					<li><a href="calgary_next/category-events">Events</a></li>
-					<li><a href="calgary_next/category-restaurants">Restaurants & Food</a></li>
-					<li><a href="calgary_next/category-entertainment">Sports & Entertainment</a></li>
-					<li><a href="calgary_next/about">About</a></li>
-					<li><a href="calgary_next/contact">Contact Us</a></li>
+					<li><a href="../../proj-wp-calgarynext">Home</a></li>
+					<li><a href="proj-wp-calgarynext/category-business">Business</a></li>
+					<li><a href="proj-wp-calgarynext/category-events">Events</a></li>
+					<li><a href="proj-wp-calgarynext/category-restaurants">Restaurants & Food</a></li>
+					<li><a href="proj-wp-calgarynext/category-entertainment">Sports & Entertainment</a></li>
+					<li><a href="proj-wp-calgarynext/about">About</a></li>
+					<li><a href="proj-wp-calgarynext/contact">Contact Us</a></li>
 				</ul>
 			</div>
 			
