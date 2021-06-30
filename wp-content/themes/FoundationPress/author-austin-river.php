@@ -17,7 +17,7 @@ get_header(); ?>
   <!-- Author's card -->
   <div class="author-card-container">
     <div class="card-image">
-      <img class="author-photo" src="../../../calgary_next\wp-content\themes\FoundationPress\src\assets\images\authors\austin-rivers.jpg" alt="Austin Rivers photo">
+      <img class="author-photo" src="../../../proj-wp-calgarynext\wp-content\themes\FoundationPress\src\assets\images\authors\austin-rivers.jpg" alt="Austin Rivers photo">
     </div>
     <div class="card-wrap">
       <div class="card-text">
@@ -43,7 +43,7 @@ get_header(); ?>
   <!-- Card 1 -->
   <div class="card-container">
     <div class="card-image">
-      <img src="../../../calgary_next\wp-content\themes\FoundationPress\dist\assets\images\topic-business\bitcoin.jpg" alt="Bitcoin image">
+      <img src="../../../proj-wp-calgarynext\wp-content\themes\FoundationPress\dist\assets\images\topic-business\bitcoin.jpg" alt="Bitcoin image">
     </div>
     <div class="card-wrap">
       <div class="card-title">
@@ -56,7 +56,7 @@ get_header(); ?>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra justo euismod diam nunc, ut condimentum commodo.</p>
       </div>
       <div>
-        <button class="readMore-button" onclick="window.location.href='http:localhost/calgary_next/business/best-time-to-buy-crypto/'">READ MORE</button>
+        <button class="readMore-button" onclick="window.location.href='http:localhost/proj-wp-calgarynext/business/best-time-to-buy-crypto/'">READ MORE</button>
       </div>
     </div>
   </div>
@@ -64,7 +64,7 @@ get_header(); ?>
   <!-- Card 2 -->
   <div class="card-container">
     <div class="card-image">
-      <img src="../../../calgary_next\wp-content\themes\FoundationPress\dist\assets\images\topic-business\laptop.jpg" alt="Bitcoin image">
+      <img src="../../../proj-wp-calgarynext\wp-content\themes\FoundationPress\dist\assets\images\topic-business\laptop.jpg" alt="Bitcoin image">
     </div>
     <div class="card-wrap">
       <div class="card-title">
@@ -77,7 +77,7 @@ get_header(); ?>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra justo euismod diam nunc, ut condimentum commodo.</p>
       </div>
       <div>
-        <button class="readMore-button" onclick="window.location.href='http:localhost/calgary_next/business/alberta-now-home-to-3000-tech-companies/'">READ MORE</button>
+        <button class="readMore-button" onclick="window.location.href='http:localhost/proj-wp-calgarynext/business/alberta-now-home-to-3000-tech-companies/'">READ MORE</button>
       </div>
     </div>
   </div>
@@ -85,7 +85,7 @@ get_header(); ?>
   <!-- Card 3 -->
   <div class="card-container">
     <div class="card-image">
-      <img src="../../../calgary_next\wp-content\themes\FoundationPress\dist\assets\images\topic-business\house.jpg" alt="Bitcoin image">
+      <img src="../../../proj-wp-calgarynext\wp-content\themes\FoundationPress\dist\assets\images\topic-business\house.jpg" alt="Bitcoin image">
     </div>
     <div class="card-wrap">
       <div class="card-title">
@@ -98,7 +98,7 @@ get_header(); ?>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra justo euismod diam nunc, ut condimentum commodo.</p>
       </div>
       <div>
-        <button class="readMore-button" onclick="window.location.href='http:localhost/calgary_next/business/calgary-housing-market-sees-best-sales-in-over-two-decades/'">READ MORE</button> 
+        <button class="readMore-button" onclick="window.location.href='http:localhost/proj-wp-calgarynext/business/calgary-housing-market-sees-best-sales-in-over-two-decades/'">READ MORE</button> 
       </div>
     </div>
   </div>
