@@ -14,7 +14,7 @@
 
 			<!-- Logo & Description Section-->
 			<div class="sec about" >
-				<img src="../../../../proj-wp-calgarynext/wp-content/themes/FoundationPress/src/assets/images/CN-LOGO.png" alt="Calgary Next Logo">
+				<img src="../../../../../proj-wp-calgarynext/wp-content/themes/FoundationPress/src/assets/images/CN-LOGO.png" alt="Calgary Next Logo">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, eget sollicitudin posuere tortor, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			</div>
 			
