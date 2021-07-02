@@ -16,23 +16,34 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
+
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">		<?php wp_head(); ?>
 		<link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap" rel="stylesheet">
-		<!-- Icon CDNs -->
+	
+		<!-- Icon & Animation CDNs -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 	</head>
+
 	<body <?php body_class(); ?>>
 
-		<!-- ACTIVE CASES -->
-		<?php echo do_shortcode('[cvct-advance id="132"]'); ?>
+		<header class="head-container">
+			<nav class="n-nav">
+				<div class="logo">
+					<img src="../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/CN-LOGO.png" alt="Calgary Next Logo">
+				</div>
+				<ul class="nav-links">
+					<li><a class="homeMenu" href="../../calgary_next">Home</a></li>
+					<li><a class="businessMenu" href="calgary_next/category-business">Business</a></li>
+					<li><a class="eventsMenu" href="calgary_next/category-events">Events</a></li>
+					<li><a class="restaurantsMenu" href="calgary_next/category-restaurants">Restaurants & Food</a></li>
+					<li><a class="entertainmentMenu" href="calgary_next/category-entertainment">Sports & Entertainment</a></li>
+					<li><a class="aboutMenu" href="calgary_next/about">About</a></li>
+					<li><a class="contactMenu" href="calgary_next/contact/">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
 
-		<!-- GROOVY nav plugin -->
-		<?php if ( function_exists( 'groovy_menu' ) ) { groovy_menu(); } ?>
 
-
-		<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
-			<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
-		<?php endif; ?>
-
+		<!-- TODO: Hamburguer Menu -->
 	</header>
