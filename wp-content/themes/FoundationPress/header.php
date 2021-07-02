@@ -30,16 +30,16 @@
 		<header class="head-container">
 			<nav class="n-nav">
 				<div class="logo">
-					<img src="../../../../calgary_next/wp-content/themes/FoundationPress/src/assets/images/CN-LOGO.png" alt="Calgary Next Logo">
+					<img src="../../../../proj-wp-calgarynext/wp-content/themes/FoundationPress/src/assets/images/CN-LOGO.png" alt="Calgary Next Logo">
 				</div>
 				<ul class="nav-links">
-					<li><a class="homeMenu" href="../../calgary_next">Home</a></li>
-					<li><a class="businessMenu" href="calgary_next/category-business">Business</a></li>
-					<li><a class="eventsMenu" href="calgary_next/category-events">Events</a></li>
-					<li><a class="restaurantsMenu" href="calgary_next/category-restaurants">Restaurants & Food</a></li>
-					<li><a class="entertainmentMenu" href="calgary_next/category-entertainment">Sports & Entertainment</a></li>
-					<li><a class="aboutMenu" href="calgary_next/about">About</a></li>
-					<li><a class="contactMenu" href="calgary_next/contact/">Contact Us</a></li>
+					<li><a class="homeMenu" href="../../proj-wp-calgarynext">Home</a></li>
+					<li><a class="businessMenu" href="proj-wp-calgarynext/category-business">Business</a></li>
+					<li><a class="eventsMenu" href="proj-wp-calgarynext/category-events">Events</a></li>
+					<li><a class="restaurantsMenu" href="proj-wp-calgarynext/category-restaurants">Restaurants & Food</a></li>
+					<li><a class="entertainmentMenu" href="proj-wp-calgarynext/category-entertainment">Sports & Entertainment</a></li>
+					<li><a class="aboutMenu" href="proj-wp-calgarynext/about">About</a></li>
+					<li><a class="contactMenu" href="proj-wp-calgarynext/contact/">Contact Us</a></li>
 				</ul>
 			</nav>
 		</header>

@@ -1,37 +1,16 @@
-// Apply outline styles only when input method is keyboard
-// remove :focus style via What Input using progressive enhancement
-// so :focus isn't left broken if JavaScript fails
 
-// ORIGINAL CODE FROM THE THEME *****
-// [data-whatinput="mouse"] a:focus, button:focus
-// [data-whatinput="touch"] a:focus, button:focus {
-//   outline: none;
-// }
-
-
-// Style the current menu link for **NHAT**
-#homeMenu #menu-item-7, #businessMenu #menu-item-8, #eventsMenu #menu-item-9, #restaurantsMenu #menu-item-10, 
-#entertainmentMenu #menu-item-11, #aboutMenu #menu-item-12, #contactMenu #menu-item-13 {
-  a {
-    color: $light-red !important;
+// Style the current menu link for
+#homeMenu .homeMenu, #businessMenu .businessMenu, #eventsMenu .eventsMenu, #restaurantsMenu .restaurantsMenu, 
+#entertainmentMenu .entertainmentMenu, #aboutMenu .aboutMenu, #contactMenu .contactMenu {
+    color: $light-red;
     border-bottom: 3px solid $light-red;
-  }
-}
-
-// Style the current menu link for **JAIME**
-#homeMenu #menu-item-418, #businessMenu #menu-item-419, #eventsMenu #menu-item-420, #restaurantsMenu #menu-item-421, 
-#entertainmentMenu #menu-item-422, #aboutMenu #menu-item-423, #contactMenu #menu-item-424 {
-  a {
-    color: $light-red !important;
-    border-bottom: 3px solid $light-red;
-  }
 }
 
 
 // Hover links and icons
 .link-hover {
   a:hover {
-    color: $light-red !important;
+    // color: $light-red !important;
     transition-duration: .5s;
   }
 }
