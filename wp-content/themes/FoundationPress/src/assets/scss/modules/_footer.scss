@@ -120,12 +120,13 @@ footer  {
   // To override the Subscribe BTN color
   .mailpoet_submit {
     background-color: #aa1b2e !important;
+    
+    &:hover {
+      background-color: $light-red !important;
+      transition: .5s;
+    }
   }
 
-  .mailpoet_submit:hover {
-    background-color: $light-red !important;
-    transition: .5s;
-  }
 }
 
 // Copyright section
