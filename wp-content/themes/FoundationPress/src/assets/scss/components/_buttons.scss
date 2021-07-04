@@ -41,13 +41,13 @@
 // Buttons for medium screens
 // Read More button
 @mixin readMore-button-md {
-  padding: 1rem;
+  padding: 1em;
   // margin-top: 0.5rem;
 }
 
 // Load More button
 @mixin loadMore-button-md {
-  padding: 1rem;
+  padding: 1em;
   margin-top: 2rem;
 }
 
@@ -56,13 +56,13 @@
 // Load More button
 @mixin loadMore-button-sm {
   font-size: .9rem;
-  padding: 1rem;
+  padding: 1em;
   margin-top: 2rem;
 }
 
 // Read More button
 @mixin readMore-button-sm {
   font-size: .9rem;
-  padding: 1rem;
+  padding: 1em;
   margin-top: 0.5rem;
 }
