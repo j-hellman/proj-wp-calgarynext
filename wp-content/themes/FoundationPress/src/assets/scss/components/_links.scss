@@ -1,5 +1,5 @@
 
-// Style the current menu link for
+// Style the current menu link
 #homeMenu .homeMenu, #businessMenu .businessMenu, #eventsMenu .eventsMenu, #restaurantsMenu .restaurantsMenu, 
 #entertainmentMenu .entertainmentMenu, #aboutMenu .aboutMenu, #contactMenu .contactMenu {
     color: $light-red;
@@ -10,7 +10,7 @@
 // Hover links and icons
 .link-hover {
   a:hover {
-    // color: $light-red !important;
+    color: $light-red !important;
     transition-duration: .5s;
   }
 }

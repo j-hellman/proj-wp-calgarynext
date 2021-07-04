@@ -1,7 +1,7 @@
 // Mixin for the buttons
 @mixin button {
   font-family: $secondaryFont;
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: bold;
   color: $white;
   background: $dark-red;
@@ -21,13 +21,13 @@
 // Read More button
 .readMore-button {
   @include button();
-  padding: 1rem;
+  padding: 1.2em;
 }
 
 // Load More button
 .loadMore-button {
   @include button();
-  padding: 1rem 2rem;
+  padding: 1.6em;
   margin-top: 3rem;
 }
 
